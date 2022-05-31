@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 1.9em;}
+h3{font-size: 1.5em;}
+p{font-size: 1.2em;}
+ul{list-style-type: none;}
+li{font-size: 1.2em;}
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(63, 63, 63);
+}
+
+button:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: rgb(255, 65, 65)}
+
+header .logo{    
+    margin: 0; 
+    padding: 25px 30px;  
+    font-weight: bold;
+    color: black;
+    font-size: 1.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+
+header  a:hover{
+    color: rgb(27, 27, 27);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Empire.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#quiensoy .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#mis-conocimientos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#mis-conocimientos .container{
+    padding: 150px 12px;
+}
+
+#mis-conocimientos h2{
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#mis-conocimientos p{
+    display: none;
+}
+
+#mis-conocimientos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/code.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/computer.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/programming.jpg");
+}
+
+#objet h2{
+    font-size: 2.7em;
+    text-align: center;
+    margin: 100px 30px;
+    margin-bottom: 50px;
+
+}
+
+#objet .container{
+    text-align: center;
+    padding: 90px 12px;
+    margin-bottom: 100px;
+}
+
+#objet ul{
+    margin-left: -50px;
+}
+
+#objet li{
+    margin: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contactar{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    height: 70vh;
+    color: white;
+}
+
+#contactar button{
+    font-size: 1.75em;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (win-width: 720px){
+    header .container{
+        flex-direction: row;
+    }
+}
